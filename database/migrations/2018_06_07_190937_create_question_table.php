@@ -16,9 +16,7 @@ class CreateQuestionTable extends Migration
         Schema::create('question', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('quiz_id')->unsigned()->index();
-            $table->foreign('quiz_id')->references('id')->on('quiz');
             $table->integer('answer_id')->unsigned()->index();
-            $table->foreign('answer_id')->references('id')->on('answer');
             $table->string('image');
             $table->text('video');
             $table->timestamps();
