@@ -12,7 +12,11 @@
 </head>
 <body>
 
-@yield('content')
+<main>
+    @yield('content')
+</main>
+
+@include('layouts.footer')
 
 <!--  Scripts-->
 <script src="/jquery/jquery.min.js"></script>
