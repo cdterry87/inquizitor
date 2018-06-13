@@ -8,6 +8,12 @@
 
                 <br/>
 
+                @if (session('status'))
+                    <div class="card-panel light-green darken-1 white-text">
+                        {{ session('status') }}
+                    </div>
+                @endif
+
                 <form method="POST" action="{{ route('password.email') }}">
                     @csrf
 

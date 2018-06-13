@@ -8,6 +8,8 @@
 
                 <br/>
 
+                @include('layouts.errors')
+
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
 
